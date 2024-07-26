@@ -1,0 +1,584 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+*{
+    scroll-behavior: smooth;
+
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0E0A48;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    
+}
+body.loaded {
+    opacity: 1;
+}
+.first {
+    background: url('./11062b_6783fe24ca554c53a3ab020857a888d8~mv2.webp') no-repeat fixed;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.content{ 
+    max-width: 1700px;
+    width: 100%;
+}
+.name a{
+    text-decoration: none;
+    color:#FF66F5;
+    font-family: "Lobster", sans-serif;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid white;
+    height: 100px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+nav a{
+    text-decoration: none;
+}
+
+.nav ul a {
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+}
+nav ul a:hover{
+    color: #BF51D6;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+.login{
+    display: flex;
+    align-items: center;
+}
+header .login a {
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+}
+.fa-user{
+    background-color: #FF66F5;
+    border-radius: 50%;
+    font-size: 16px;
+    padding: 5px;
+    color: #181B86;
+}
+.space{
+    display: inline-block;
+    width: 10px;
+}
+.socials{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+
+.first h1 {
+    font-size: 5.5rem;
+    margin-bottom: 1rem;
+    width: 800px;
+}
+
+.first p {
+    width: 600px;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    padding: 1rem 3rem;
+    background-color: #FF66F5;
+    border: 1px solid white;
+    color: #5F2982;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.btn:hover{
+    background-color: white;
+}
+.now-playing {
+    background-color: #3843CD;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+    
+}
+.now-playing .movies {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-top: 1px solid white;
+    padding-top: 50px ;
+}
+
+.now-playing .movie {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.now-playing .movie p{
+    font-size: 20px;
+}
+.now-playing .movie img {
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+.movie img:hover{
+    cursor: pointer;
+    filter: saturate(20%);
+}
+.showtime-btn{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 100px ;
+    padding-top: 100px;
+}
+.coming-soon{
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+.trailer {
+    text-align: center;
+}
+.category {
+    background-color: #0E0A48;
+    color: #FF66F5;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.movie-title {
+    font-size: 24px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+.trailer-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    padding-bottom: 100px;
+
+}
+.trailer-button span {
+    font-size: 18px;
+}
+.trailer-button i{
+    font-size: 25px;
+}
+.how-it-works {
+    background-color: #0E0A48;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+    
+}
+.how-it-works .naming{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+.how-it-works .steps {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
+.how-it-works .step{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+.step .number{
+    font-size: 32px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #FF66F5;
+}
+.line {
+    height: 1px;
+    width: 80px;
+    background-color: #ff6be9;
+    margin: 10px 0;
+}
+.instructions{
+    width: 220px;
+    padding-bottom: 100px;
+}
+.how-it-works .prices{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.ticket-prices {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    background-color: #FF66F5;
+    
+}
+.price-title{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px dashed #0E0A48;
+
+}
+.price-title h2{
+    color: #0E0A48;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.price-category{
+    width: 90%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 2px dashed #0E0A48;
+}
+.price-category p {
+    font-size: 24px;
+    width: 160px;
+    color: #0E0A48;
+    font-weight: bold;
+}
+.cost{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.cost h4 {
+    font-size: 50px;
+    
+    color: #0E0A48;
+    font-weight: bold;
+
+}
+.snack-bar {
+    background-color: #3843CD;
+    padding-top: 200px;
+    text-align: center;
+    height: 600px;
+    margin-bottom: 250px;
+    
+}
+
+.snack-bar .snacks {
+    display: flex;
+    justify-content: space-around;
+    gap: 6rem;
+}
+
+.snack-bar .snack {
+    width: 200px;
+    text-align: center;
+}
+.snack h3{
+    padding-bottom: 30px;
+    border-bottom: 1px dashed  white;
+}
+.snack p{
+    font-size: 32px;
+    font-weight: bold;
+}
+.snack .btn {
+    background-color: transparent;
+    color: white;
+}
+.snack .btn:hover{
+    background-color: white;
+    color: black;
+}
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.newsletter h2{
+    font-size: 32px;
+}
+.newsletter p{
+    width: 660px;
+    padding-bottom: 80px;
+}
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    width: 50%;
+    height: 200px;
+   
+}
+
+.newsletter input {
+    height: 50%;
+    border: 2px solid #FF66F5;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    
+}
+.newsletter input::placeholder{
+    color: #FF66F5;
+}
+.newsletter input:hover{
+    border: 2px solid #fff;
+}
+.newsletter input:focus{
+    border: 2px solid #fff;
+}
+.newsletter label{
+    font-size: 28px;
+    font-weight: bold;
+}
+.newsletter button {
+    height: 50%;
+    background-color: #FF66F5;
+    border: none;
+    color: #0E0A48;
+    cursor: pointer;
+    font-size: 40px;
+    transition: 0.5s;
+}
+.newsletter button:hover{
+    background-color: white;
+}
+
+.footer {
+    background-color: #3843CD;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.footer-content  {
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+   width: 100%;
+   padding-bottom: 100px;
+   border-bottom: 1px solid white;
+
+}
+.footer-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+.footer-column1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 80px;
+
+}
+.footer-column1 .btn{
+    color: white;
+    background-color: transparent;
+}
+.footer-column1 .btn:hover{
+    color: black;
+    background-color: white;
+}
+.footer-column1 .social-icons {
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+
+}
+.footer-column p{
+    width: 280px;
+    margin: 0;
+}
+.footer-column h3{
+    margin: 0;
+}
+.footer-column ul,a,li {
+    list-style: none;
+    text-decoration: none;
+    color:white;
+
+}
+.nname{
+    font-family:"Lobster", sans-serif;
+}
+.rights {
+    padding-top: 20px;
+    padding-bottom: 100px;
+
+}
+.chatbox{
+    width: 200px;
+    height: 50px;
+    background-color: #FF66F5;
+    position: fixed;
+    right: 20px;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: #0E0A48;
+}
+.chatbox i{
+    font-size: 25px;
+}
+@media (max-width: 992px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .footer-column,
+    .footer-column1 {
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-column1 {
+        gap: 40px;
+    }
+
+    .footer-column p {
+        width: 100%;
+    }
+    .how-it-works .steps{
+        flex-wrap: wrap;
+    }
+    .icecream img{
+        max-width: 100%;
+    }
+}
+@media (max-width: 838px) {
+    nav ul {
+        flex-direction: column;
+        gap: 0;
+    }
+    .content p {
+        max-width: 100%;
+        font-size: 16px;
+
+
+    }
+    .content h1{
+        max-width: 100%;
+        font-size: 40px;
+
+    }
+    .now-playing .movies,
+    .coming-soon,
+    .how-it-works .steps,
+    .snack-bar .snacks {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .now-playing .movie,
+    .trailer,
+    .how-it-works .step,
+    .snack-bar .snack {
+        max-width: 100%;
+    }
+    .snack-bar{
+        height: 100%;
+    }
+    .ticket-prices{
+        width: 100%;
+    }
+
+    
+    .newsletter form {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .newsletter form input[type="text"] {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .first h1 {
+        font-size: 2.5rem;
+    }
+
+    .first p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        padding: 0.5rem 1rem;
+    }
+
+    .newsletter form input[type="text"] {
+        width: 100%;
+    }
+
+    .newsletter h2 {
+        font-size: 24px;
+    }
+
+    .newsletter p {
+        font-size: 16px;
+    }
+}
